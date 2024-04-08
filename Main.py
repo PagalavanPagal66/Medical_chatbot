@@ -1,4 +1,4 @@
-huggingface_token = "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"
+huggingface_token = "hf_AmwHEORkXCzuCSJDxVJVcQNuQRRmO"
 
 from pymed import PubMed
 from typing import List
@@ -6,17 +6,6 @@ from haystack import component
 from haystack import Document
 
 import streamlit as st
-
-# page_by_img ="""
-# <style>
-# #Mainmenu {visibility : hidden;}
-# footer {visibility : hidden;}
-# header {visibility :hidden;}
-# }
-# </style>
-# """
-# st.markdown(page_by_img,unsafe_allow_html=True)
-
 st.title("MEDITRON....!!!")
 
 
@@ -103,8 +92,6 @@ def ask(question):
   output = pipe.run(data={"keyword_prompt_builder": {"question": question},
                           "prompt_builder": {"question": question},
                           "llm": {"generation_kwargs": {"max_new_tokens": 500}}})
-  # print(question)
-  # print(output['llm']['replies'][0])
   st.success("Generated successfully")
   st.write(output['llm']['replies'][0])
 
