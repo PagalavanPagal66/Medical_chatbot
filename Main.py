@@ -35,10 +35,10 @@ class PubMedFetcher():
 
 from haystack.components.generators import HuggingFaceTGIGenerator
 
-keyword_llm = HuggingFaceTGIGenerator("mistralai/Mixtral-8x22B-Instruct-v0.1", token=huggingface_token)
+keyword_llm = HuggingFaceTGIGenerator("mistralai/Mixtral-8x7B-Instruct-v0.1", token=huggingface_token)
 keyword_llm.warm_up()
 
-llm = HuggingFaceTGIGenerator("mistralai/Mixtral-8x22B-Instruct-v0.1", token=huggingface_token)
+llm = HuggingFaceTGIGenerator("mistralai/Mixtral-8x7B-Instruct-v0.1", token=huggingface_token)
 llm.warm_up()
 from haystack import Pipeline
 from haystack.components.builders.prompt_builder import PromptBuilder
