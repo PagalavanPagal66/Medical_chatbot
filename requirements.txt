@@ -9,3 +9,4 @@ langchain-text-splitters==0.0.1
 pydub==0.25.
 pymed==0.8.9
 streamlit==1.23.1
+transformers
