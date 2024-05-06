@@ -4,7 +4,7 @@ from pymed import PubMed
 from typing import List
 from haystack import component
 from haystack import Document
-import transformers
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 import streamlit as st
 st.title("MEDITRON....!!!")
