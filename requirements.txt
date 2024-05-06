@@ -1,7 +1,7 @@
 ﻿haystack==0.42
 haystack-ai==2.0.0b5
 haystack-bm25==1.0.2
-huggingface-hub==0.16.4
+huggingface-hub==0.19.3
 langchain==0.1.16
 langchain-community==0.0.34
 langchain-core==0.1.46
