@@ -4,6 +4,7 @@ from pymed import PubMed
 from typing import List
 from haystack import component
 from haystack import Document
+import transformers
 
 import streamlit as st
 st.title("MEDITRON....!!!")
